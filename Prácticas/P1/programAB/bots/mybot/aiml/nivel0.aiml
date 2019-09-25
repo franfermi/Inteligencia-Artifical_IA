@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Nivel 0: Entrega del conocimiento necesario para responder a las preguntas sobre la entrevista de
+trabajo. En este caso, el alumno puede optar hasta cuatro puntos sobre diez. -->
+
+<!-- Regla 1 -->
+	<category>
+		<pattern> Hablame un poco de ti </pattern> 
+		<template> Mi nombre es Francisco, vivo actualmente en Granada y 
+        estoy cursando el último año del grado de Ingeniería Informática. </template> 
+	</category>
+
+<!-- Regla 1.1 -->
+	<category>
+		<pattern> * un poco ^ [sobre de] ti</pattern> 
+		<template><srai> HABLAME UN POCO DE TI </srai></template> 
+	</category>
+
+<!-- Regla 2 -->
+	<category>
+		<pattern> Cual es tu mayor defecto </pattern> 
+		<template> Mi mayor defecto es ser demasiado perfeccionista y necesito
+        ser el ultimo que revise un proyecto antes de entregar. </template> 
+	</category>
+
+<!-- Regla 2.1 -->
+	<category>
+		<pattern> * [defecto defectos] ^</pattern> 
+		<template><srai> CUAL ES TU MAYOR DEFECTO </srai></template> 
+	</category>
+
+<!-- Regla 3 -->
+	<category>
+		<pattern> Que aspectos no te gustan de un jefe </pattern> 
+		<template> La falta de respeto a sus trabajadores. </template> 
+	</category>
+
+<!-- Regla 3.1 -->
+	<category>
+		<pattern> * no te [gusta gustan] * jefe </pattern> 
+		<template><srai> QUE ASPECTOS NO TE GUSTAN DE UN JEFE </srai></template> 
+	</category>
+
+<!-- Regla 4 -->
+	<category>
+		<pattern> Cuales son tus 3 mayores virtudes </pattern> 
+		<template> Constancia, paciencia y perfeccionismo. </template> 
+	</category>
+
+<!-- Regla 4.1 -->
+	<category>
+		<pattern> * 3 ^ virtudes ^</pattern> 
+		<template><srai> CUALES SON TUS 3 MAYORES VIRTUDES </srai></template> 
+	</category>
+
+<!-- Regla 5 -->
+	<category>
+		<pattern> Te consideras preparado para desempeñar las funciones de este puesto </pattern> 
+		<template> Sinceramente me veo capacitado para afrontar el trabajo ya que poseo
+		los conocimientos suficientes y tengo ganas de seguir creciendo. </template> 
+	</category>
+
+<!-- Regla 5.1 -->
+	<category>
+		<pattern> * [desempeñar realizar] * puesto ^ </pattern> 
+		<template><srai> TE CONSIDERAS PREPARADO PARA DESEMPEÑAR LAS FUNCIONES DE ESTE PUESTO </srai></template> 
+	</category>
+
+<!-- Regla 6 -->
+	<category>
+		<pattern> Tienes experiencia en la realizacion de proyectos en equipos de trabajo </pattern> 
+		<template> Si, en la carrera he realizado proyectos de formal grupal en las distintas asignaturas. </template> 
+	</category>
+
+<!-- Regla 6.1 -->
+	<category>
+		<pattern> * experiencia * [equipo equipos] ^ </pattern> 
+		<template><srai> TIENES EXPERIENCIA EN LA REALIZACION DE PROYECTOS EN EQUIPOS DE TRABAJO </srai></template> 
+	</category>
+
+<!-- Regla 7 -->
+	<category>
+		<pattern> Realizarias un trabajo que no fuera con tu especialidad </pattern> 
+		<template> Como preferencia tengo lo realizado con mi especialidad pero estoy abierto
+		a nuevas posibilidades. </template> 
+	</category>
+
+<!-- Regla 7.1 -->
+	<category>
+		<pattern> * especialidad ^ </pattern> 
+		<template><srai> REALIZARIAS UN TRABAJO QUE NO FUERA CON TU ESPECIALIDAD </srai></template> 
+	</category>
+
+<!-- Regla 8 -->
+	<category>
+		<pattern> Te desplazarias de manera ocasional a otros lugares </pattern> 
+		<template> No tendría ningún problema, además dispongo de vehiculo para el desplazamiento. </template> 
+	</category>
+
+<!-- Regla 8.1 -->
+	<category>
+		<pattern> Te ^ [desplazar desplazarias] * </pattern> 
+		<template><srai> TE DESPLAZARIAS DE MANERA OCASIONAL A OTROS LUGARES </srai></template> 
+	</category>
+
+<!-- Regla 9 -->
+	<category>
+		<pattern> Te consideras una persona creativa </pattern> 
+		<template> Si, me considero creativo ya que tengo mucha imaginacion. </template> 
+	</category>
+
+<!-- Regla 9.1 -->
+	<category>
+		<pattern> * [creativo creativa creatividad] ^ </pattern> 
+		<template><srai> TE CONSIDERAS UNA PERSONA CREATIVA </srai></template> 
+	</category>
+
+<!-- Regla 10 -->
+	<category>
+		<pattern> Que expectativas tienes de este trabajo </pattern> 
+		<template> Una buena oportunidad para descubrir el mundo laboral. </template> 
+	</category>
+
+<!-- Regla 10.1 -->
+	<category>
+		<pattern> * [expectativas esperas] * trabajo ^ </pattern> 
+		<template><srai> QUE EXPECTATIVAS TIENES DE ESTE TRABAJO </srai></template> 
+	</category>
+
+<!-- Regla 11 -->
+	<category>
+		<pattern> Que trabajos has tenido en esta tematica </pattern> 
+		<template> No tengo experiencia en este ambito de trabajo. </template> 
+	</category>
+
+<!-- Regla 11.1 -->
+	<category>
+		<pattern> * [trabajo trabajos] * tematica ^ </pattern> 
+		<template><srai> QUE TRABAJOS HAS TENIDO EN ESTA TEMTICA </srai></template> 
+	</category>
+
+<!-- Regla 12 -->
+	<category>
+		<pattern> Normalmente te llevas el trabajo a casa </pattern> 
+		<template> Acostumbrado a hacerlo en mis estudios no tendré ningún problema si
+		es de forma ocasional. </template> 
+	</category>
+
+<!-- Regla 12.1 -->
+	<category>
+		<pattern> * [trabajo tarea] * casa  </pattern> 
+		<template><srai> NORMALMENTE TE LLEVAS EL TRABAJO A CASA </srai></template> 
+	</category>
+
+<!-- Regla 13 -->
+	<category>
+		<pattern> Cuales son tus aspiraciones salariales </pattern> 
+		<template> Un salario el cual refleje mis estudios y mi dedicacion. </template> 
+	</category>
+
+<!-- Regla 13.1 -->
+	<category>
+		<pattern> * [aspiraciones aspiracion] ^ [salariales salario] ^  </pattern> 
+		<template><srai> CUALES SON TUS ASPIRACIONES SALARIALES </srai></template> 
+	</category>
+
+<!-- Regla 14 -->
+	<category>
+		<pattern> Donde te ves dentro de cinco años </pattern> 
+		<template> En 5 años me veo con un puesto superior en la empresa. </template> 
+	</category>
+
+<!-- Regla 14.1 -->
+	<category>
+		<pattern> * [ves encontraras] * [cinco 5] * </pattern> 
+		<template><srai> DONDE TE VES DENTRO DE CINCO AÑOS </srai></template> 
+	</category>
+
+<!-- Regla 15 -->
+	<category>
+		<pattern> No tienes experiencia para el puesto a desempeñar </pattern> 
+		<template> No tengo ya que estoy terminando mis estudios, pero en cambio tengo muchas
+		ganas de salir al mundo laboral y trabajar en distintos proyectos. </template> 
+	</category>
+
+<!-- Regla 15.1 -->
+	<category>
+		<pattern> * experiencia * puesto ^ </pattern> 
+		<template><srai> NO TIENES EXPERICENCIA PARA EL PUESTO A DESEMPEÑAR </srai></template> 
+	</category>
+
+<!-- Regla 16 -->
+	<category>
+		<pattern> Que sabes de la empresa y el puesto de trabajo </pattern> 
+		<template> Se que es una empresa que se compone de una gran numero de trabajadores,
+		utiliza tecnologias actuales y el puesto de trabajo esta relacionado con mis conocimientos. </template> 
+	</category>
+
+<!-- Regla 16.1 -->
+	<category>
+		<pattern> * empresa * puesto ^ </pattern> 
+		<template><srai> QUE SABES DE LA EMPRESA Y DEL PUESTO DE TRABAJO </srai></template> 
+	</category>
+
+<!-- Regla 17 -->
+	<category>
+		<pattern> Que haces cuando consideras que tu jefe no tiene la razon </pattern> 
+		<template> Explicarle de forma educada que se equivoca y le propongo el motivo. </template> 
+	</category>
+
+<!-- Regla 17.1 -->
+	<category>
+		<pattern> * jefe * [equivoca razon] ^ </pattern> 
+		<template><srai> QUE HACES CUANDO CONSIDERAS QUE TU JEFE NO TIENE LA RAZON </srai></template> 
+	</category>
+
+<!-- Regla 18 -->
+	<category>
+		<pattern> Por que deberiamos escogerte a ti </pattern> 
+		<template> Pienso que reuno todos los requisitos que se necesitan y me encantaria
+		comenzar cuanto antes. </template> 
+	</category>
+
+<!-- Regla 18.1 -->
+	<category>
+		<pattern> * [escogerte elegirte] ^ </pattern> 
+		<template><srai> POR QUE DEBERIAMOS ESCOGERTE A TI </srai></template> 
+	</category>
+
+</aiml>
